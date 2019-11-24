@@ -24,7 +24,7 @@
     r="{radius}"
     stroke="{color}"
     fill="none"
-    stroke-width="{thickness}"
+    stroke-width="{thickness * 2}"
     stroke-dasharray="{dash},100"
     stroke-linecap="round"
   />

@@ -46,12 +46,12 @@ Observe the port mentioned and open [http://localhost:5000](http://localhost:500
 
 >![](.images/example-screenshot.png)
 
-<font size="+2" color=red>tbd. DOES NOT WORK</font>
-
 
 ## Developing
 
-While you're running the `npm run dev`, changes to the code should be reflected in the app. Try to change something.
+While you're running the `npm run dev`, changes to the code *should* be reflected in the app. Try to change something within the component, e.g. double the thickness.
+
+>Note: Currently, changes don't seem to auto-propagate. You'll have to refresh the browser. <!-- tbd. -->
 
 
 <!-- tbd.

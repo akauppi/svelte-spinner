@@ -4,7 +4,7 @@
 
   // Use this for local developed code
   //import Spinner from 'components/Spinner.svelte';
-  import Spinner from 'components/Spinner.svelte';
+  import Spinner from '../src/index.svelte';
 
   let size = 50;
   let speed = 750;

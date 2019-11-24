@@ -1,5 +1,5 @@
-# 2.0.0
-Moved to Svelte v3.
+# Changelog
 
-# 1.0.0
-Moved to Svelte v2.
+## 24-Nov-19
+
+- Got the `app` vs. `src` approach to work (can demo the component without `npm` export)
