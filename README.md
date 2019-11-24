@@ -7,12 +7,12 @@ A Svelte SVG loading spinner.
 ## Install
 
 ```bash
-npm install --save svelte-spinner
+npm install --save
 ```
 
 ## Example
 
-Look at the [example folder][example-folder-url] for a basic working example.
+Look at the [example folder](example/README.md) for a basic working example.
 
 ## Usage
 
