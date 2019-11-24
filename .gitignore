@@ -1,5 +1,7 @@
-/node_modules/
+node_modules/
 /dist/
 
-/example/node_modules/
-/example/dist/bundle.js
+/app/public/*.css
+/app/public/*.css.map
+/app/public/*.js
+/app/public/*.js.map

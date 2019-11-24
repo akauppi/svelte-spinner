@@ -17,33 +17,47 @@ This repo shows how to develop, test and export a Svelte component.
 ## Getting started
 
 ```
-$ npm install --save
+$ npm install
 ```
+
+>Note: If you're on macOS Catalina and get a bunch of errors about `node-gyp`, see [here](https://github.com/nodejs/node-gyp/issues/1927#issuecomment-549349352).
+>
+>Essentially: 
+>
+>- `sudo rm -rf $(xcode-select -print-path)`
+>- `xcode-select --install`
+>- `/usr/sbin/pkgutil --packages | grep CLTools`    # should list some files
+
 
 ### Trying the component
 
 ```
-$ cd example
-$ npm install --save      # may give a lot of warnings (about `fsevent`)
-$ npm start
+$ npm run dev
 
-rollup v1.27.4
-bundles main.js → dist/bundle.js...
-http://localhost:10001 -> <..8<..>/example/dist
-LiveReload enabled
-created dist/bundle.js in 536ms
+  Your application is ready~! 🚀
 
-[2019-11-24 11:54:18] waiting for changes...
+  - Local:      http://localhost:5000
+
+...
+[2019-11-24 19:42:02] waiting for changes...
 ```
 
-Observe the port mentioned and try out at [http://localhost:10001](http://localhost:10001).
+Observe the port mentioned and open [http://localhost:5000](http://localhost:5000).
 
 >![](.images/example-screenshot.png)
+
+<font size="+2" color=red>tbd. DOES NOT WORK</font>
 
 
 ## Developing
 
+While you're running the `npm run dev`, changes to the code should be reflected in the app. Try to change something.
 
+
+<!-- tbd.
+## Publishing
+
+-->
 
 
 ## Usage
@@ -74,6 +88,8 @@ Observe the port mentioned and try out at [http://localhost:10001](http://localh
 | `gap`       | `40`  | How many percent of the spinner that will not be filled.
 
 
+
+
 ## References
 
 - [EmilTholin/svelte-spinner](https://github.com/EmilTholin/svelte-spinner)
@@ -82,4 +98,10 @@ Observe the port mentioned and try out at [http://localhost:10001](http://localh
 	
 	Differences to the base repo:
 	- using just one `package.json` instead of two. This less strict separation of `example` from the source allows us to do testing.
+
+- [rollup-plugin-svelte/README](https://github.com/rollup/rollup-plugin-svelte)
+
+	Read especially [this section](https://github.com/rollup/rollup-plugin-svelte#pkgsvelte) for knowledge on exporting/importing Svelte components, via npm.
+
+- [lukeed/svelte-demo](https://github.com/lukeed/svelte-demo) used as a template for the `app` part (demo/testbed)
 
